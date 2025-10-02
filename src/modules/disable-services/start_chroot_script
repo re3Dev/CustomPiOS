@@ -10,9 +10,9 @@ source /common.sh
 install_cleanup_trap
 
 apt_update_skip
-if [ $( is_in_apt policykit-1 ) -eq 1 ]; then
+#if [ $( is_in_apt policykit-1 ) -eq 1 ]; then
   #apt-get -y install policykit-1
-fi
+#fi
 
 # prevent any installed services from automatically starting
 echo exit 101 > /usr/sbin/policy-rc.d
